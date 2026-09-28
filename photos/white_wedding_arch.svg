@@ -1,0 +1,263 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Soft Stone & Marble Plaster Gradients -->
+    <linearGradient id="stoneLight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fffefa" />
+      <stop offset="25%" stop-color="#f8f3ea" />
+      <stop offset="60%" stop-color="#f0e6d6" />
+      <stop offset="100%" stop-color="#e3d6c4" />
+    </linearGradient>
+
+    <linearGradient id="columnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#eae0cf" />
+      <stop offset="20%" stop-color="#fcfbfa" />
+      <stop offset="50%" stop-color="#f2ebe0" />
+      <stop offset="80%" stop-color="#fefdfc" />
+      <stop offset="100%" stop-color="#ded0bd" />
+    </linearGradient>
+
+    <linearGradient id="goldShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8dc" />
+      <stop offset="35%" stop-color="#f3d068" />
+      <stop offset="70%" stop-color="#c99723" />
+      <stop offset="100%" stop-color="#8a630e" />
+    </linearGradient>
+
+    <linearGradient id="goldBright" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e2b744" />
+      <stop offset="50%" stop-color="#fff2be" />
+      <stop offset="100%" stop-color="#c89825" />
+    </linearGradient>
+
+    <radialGradient id="roseWhite" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#fdf9f2" />
+      <stop offset="75%" stop-color="#f2e7d7" />
+      <stop offset="100%" stop-color="#dbc8b4" />
+    </radialGradient>
+
+    <radialGradient id="roseSoftCream" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#fbf4ea" />
+      <stop offset="85%" stop-color="#ecd9c6" />
+      <stop offset="100%" stop-color="#d4bea8" />
+    </radialGradient>
+
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d3dec8" />
+      <stop offset="45%" stop-color="#a4b494" />
+      <stop offset="100%" stop-color="#6f815f" />
+    </linearGradient>
+
+    <linearGradient id="leafDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8b898" />
+      <stop offset="60%" stop-color="#768968" />
+      <stop offset="100%" stop-color="#4d5c43" />
+    </linearGradient>
+
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#4a3e35" flood-opacity="0.22" />
+    </filter>
+
+    <filter id="archDepth" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#36291e" flood-opacity="0.32" />
+    </filter>
+
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#d4af37" flood-opacity="0.65" />
+    </filter>
+
+    <!-- Multi-tier Detailed Rose Flower Component -->
+    <g id="flowerRose">
+      <ellipse cx="0" cy="0" rx="22" ry="20" fill="url(#roseWhite)" />
+      <!-- Outer Petals -->
+      <path d="M -16 -8 C -22 -20 8 -24 18 -12 C 24 0 12 20 -4 20 C -18 20 -20 8 -16 -8 Z" fill="url(#roseSoftCream)" opacity="0.95" />
+      <path d="M -10 -16 C 6 -22 22 -6 16 12 C 10 20 -10 18 -14 4 C -18 -8 2 -18 -10 -16 Z" fill="url(#roseWhite)" />
+      <!-- Inner Blossom Swirl -->
+      <path d="M -8 -8 C -4 -16 12 -14 12 -4 C 12 6 -2 12 -8 6 Z" fill="url(#roseSoftCream)" />
+      <path d="M -4 -4 C 0 -10 8 -8 8 -2 C 8 4 0 6 -4 2 Z" fill="#e8d5bf" />
+      <circle cx="0" cy="-1" r="3" fill="#cfb698" />
+    </g>
+
+    <!-- Leaf Cluster Component -->
+    <g id="leafPair">
+      <path d="M 0 0 C -14 -18 -24 -36 0 -50 C 24 -36 14 -18 0 0 Z" fill="url(#leafGrad)" />
+      <line x1="0" y1="0" x2="0" y2="-45" stroke="#5d6d4f" stroke-width="1.2" opacity="0.7" />
+      <!-- Side Leaflet -->
+      <path d="M 5 -15 C 22 -22 35 -14 38 2 C 25 10 12 2 5 -15 Z" fill="url(#leafDark)" opacity="0.9" />
+    </g>
+  </defs>
+
+  <!-- BACKGROUND PORTAL SHADOW & CASING -->
+  <g id="portalArchitecture" filter="url(#archDepth)">
+    
+    <!-- LEFT NEOCLASSICAL COLUMN (x=20 to x=150) -->
+    <!-- Column Base Plinth -->
+    <rect x="20" y="1140" width="130" height="60" fill="url(#stoneLight)" stroke="#d9cdbc" stroke-width="2" rx="3" />
+    <rect x="30" y="1060" width="110" height="80" fill="url(#stoneLight)" stroke="#dfd2c0" stroke-width="1.5" />
+    <!-- Column Shaft (Fluted) -->
+    <rect x="42" y="380" width="86" height="680" fill="url(#columnGrad)" stroke="#dfd2c0" stroke-width="1.5" />
+    <line x1="56" y1="390" x2="56" y2="1050" stroke="#cfbeaa" stroke-width="2" />
+    <line x1="70" y1="390" x2="70" y2="1050" stroke="#cfbeaa" stroke-width="2" />
+    <line x1="85" y1="390" x2="85" y2="1050" stroke="#cfbeaa" stroke-width="2.5" />
+    <line x1="100" y1="390" x2="100" y2="1050" stroke="#cfbeaa" stroke-width="2" />
+    <line x1="114" y1="390" x2="114" y2="1050" stroke="#cfbeaa" stroke-width="2" />
+    <!-- Column Capital / Impost (x=20 to x=150) -->
+    <path d="M 25 380 L 145 380 L 155 330 L 15 330 Z" fill="url(#stoneLight)" stroke="#dfd2c0" stroke-width="2" />
+    <rect x="18" y="320" width="134" height="16" fill="url(#stoneLight)" stroke="#d0c2ae" stroke-width="1.5" rx="2" />
+    <rect x="22" y="310" width="126" height="12" fill="url(#goldBright)" opacity="0.6" rx="2" />
+
+    <!-- RIGHT NEOCLASSICAL COLUMN (x=850 to x=980) -->
+    <!-- Column Base Plinth -->
+    <rect x="850" y="1140" width="130" height="60" fill="url(#stoneLight)" stroke="#d9cdbc" stroke-width="2" rx="3" />
+    <rect x="860" y="1060" width="110" height="80" fill="url(#stoneLight)" stroke="#dfd2c0" stroke-width="1.5" />
+    <!-- Column Shaft (Fluted) -->
+    <rect x="872" y="380" width="86" height="680" fill="url(#columnGrad)" stroke="#dfd2c0" stroke-width="1.5" />
+    <line x1="886" y1="390" x2="886" y2="1050" stroke="#cfbeaa" stroke-width="2" />
+    <line x1="900" y1="390" x2="900" y2="1050" stroke="#cfbeaa" stroke-width="2" />
+    <line x1="915" y1="390" x2="915" y2="1050" stroke="#cfbeaa" stroke-width="2.5" />
+    <line x1="930" y1="390" x2="930" y2="1050" stroke="#cfbeaa" stroke-width="2" />
+    <line x1="944" y1="390" x2="944" y2="1050" stroke="#cfbeaa" stroke-width="2" />
+    <!-- Column Capital / Impost (x=850 to x=980) -->
+    <path d="M 855 380 L 975 380 L 985 330 L 845 330 Z" fill="url(#stoneLight)" stroke="#dfd2c0" stroke-width="2" />
+    <rect x="848" y="320" width="134" height="16" fill="url(#stoneLight)" stroke="#d0c2ae" stroke-width="1.5" rx="2" />
+    <rect x="852" y="310" width="126" height="12" fill="url(#goldBright)" opacity="0.6" rx="2" />
+
+    <!-- GRAND CURVED ROMANESQUE ARCH (Spans x=145 to x=855) -->
+    <!-- Outer Arch Header Layer -->
+    <path d="M 25 320 C 25 100 975 100 975 320 L 855 320 C 855 170 145 170 145 320 Z" fill="url(#stoneLight)" stroke="#d9cdbc" stroke-width="2" />
+    
+    <!-- Concentric Arch Rib with Gold Inlay Line -->
+    <path d="M 80 320 C 80 135 920 135 920 320 L 905 320 C 905 150 95 150 95 320 Z" fill="#fdfbf7" stroke="#e0d4c3" stroke-width="1.5" />
+    <path d="M 115 320 C 115 170 885 170 885 320" fill="none" stroke="url(#goldBright)" stroke-width="3" opacity="0.75" />
+
+    <!-- Inner Molded Portal Frame (Around Doors Opening x=150 to x=850) -->
+    <path d="M 145 380 L 145 320 C 145 180 855 180 855 320 L 855 380" fill="none" stroke="#d5c7b3" stroke-width="6" />
+    <!-- Arch Keystone at Apex (x=500, y=140 to 195) -->
+    <path d="M 470 195 L 530 195 L 545 140 L 455 140 Z" fill="url(#stoneLight)" stroke="url(#goldBright)" stroke-width="2" />
+    <circle cx="500" cy="168" r="8" fill="url(#goldShine)" />
+  </g>
+
+  <!-- LUSH CASCADING WHITE ROSES & LEAF GARLAND (Hugging the Entire Arch) -->
+  <g id="romanticFloralGarland" filter="url(#softShadow)">
+    <!-- Hanging Left Column Cascade -->
+    <use href="#leafPair" transform="translate(70, 720) rotate(-90) scale(1.1)" />
+    <use href="#leafPair" transform="translate(65, 620) rotate(-85) scale(1.2)" />
+    <use href="#leafPair" transform="translate(75, 520) rotate(-80) scale(1.3)" />
+    <use href="#leafPair" transform="translate(85, 420) rotate(-70) scale(1.3)" />
+    <use href="#leafPair" transform="translate(110, 340) rotate(-55) scale(1.4)" />
+
+    <!-- Top Left Arching Foliage -->
+    <use href="#leafPair" transform="translate(160, 270) rotate(-40) scale(1.4)" />
+    <use href="#leafPair" transform="translate(225, 215) rotate(-30) scale(1.45)" />
+    <use href="#leafPair" transform="translate(305, 175) rotate(-20) scale(1.5)" />
+    <use href="#leafPair" transform="translate(390, 150) rotate(-10) scale(1.5)" />
+
+    <!-- Hanging Right Column Cascade -->
+    <use href="#leafPair" transform="translate(930, 720) rotate(90) scale(1.1)" />
+    <use href="#leafPair" transform="translate(935, 620) rotate(85) scale(1.2)" />
+    <use href="#leafPair" transform="translate(925, 520) rotate(80) scale(1.3)" />
+    <use href="#leafPair" transform="translate(915, 420) rotate(70) scale(1.3)" />
+    <use href="#leafPair" transform="translate(890, 340) rotate(55) scale(1.4)" />
+
+    <!-- Top Right Arching Foliage -->
+    <use href="#leafPair" transform="translate(840, 270) rotate(40) scale(1.4)" />
+    <use href="#leafPair" transform="translate(775, 215) rotate(30) scale(1.45)" />
+    <use href="#leafPair" transform="translate(695, 175) rotate(20) scale(1.5)" />
+    <use href="#leafPair" transform="translate(610, 150) rotate(10) scale(1.5)" />
+
+    <!-- BLOOMING WHITE & CREAM ROSES -->
+    <!-- Left Flank Roses -->
+    <use href="#flowerRose" transform="translate(65, 730) scale(0.9)" />
+    <use href="#flowerRose" transform="translate(60, 650) scale(1.1)" />
+    <use href="#flowerRose" transform="translate(80, 570) scale(1.2)" />
+    <use href="#flowerRose" transform="translate(65, 490) scale(1.3)" />
+    <use href="#flowerRose" transform="translate(90, 420) scale(1.35)" />
+    <use href="#flowerRose" transform="translate(125, 350) scale(1.4)" />
+    <use href="#flowerRose" transform="translate(170, 290) scale(1.5)" />
+    <use href="#flowerRose" transform="translate(230, 235) scale(1.55)" />
+    <use href="#flowerRose" transform="translate(300, 195) scale(1.6)" />
+    <use href="#flowerRose" transform="translate(380, 165) scale(1.65)" />
+
+    <!-- Right Flank Roses -->
+    <use href="#flowerRose" transform="translate(935, 730) scale(0.9)" />
+    <use href="#flowerRose" transform="translate(940, 650) scale(1.1)" />
+    <use href="#flowerRose" transform="translate(920, 570) scale(1.2)" />
+    <use href="#flowerRose" transform="translate(935, 490) scale(1.3)" />
+    <use href="#flowerRose" transform="translate(910, 420) scale(1.35)" />
+    <use href="#flowerRose" transform="translate(875, 350) scale(1.4)" />
+    <use href="#flowerRose" transform="translate(830, 290) scale(1.5)" />
+    <use href="#flowerRose" transform="translate(770, 235) scale(1.55)" />
+    <use href="#flowerRose" transform="translate(700, 195) scale(1.6)" />
+    <use href="#flowerRose" transform="translate(620, 165) scale(1.65)" />
+
+    <!-- Extra Fill Roses for Density and Luxury -->
+    <use href="#flowerRose" transform="translate(100, 520) scale(1.0)" />
+    <use href="#flowerRose" transform="translate(145, 395) scale(1.1)" />
+    <use href="#flowerRose" transform="translate(200, 310) scale(1.2)" />
+    <use href="#flowerRose" transform="translate(265, 245) scale(1.25)" />
+    <use href="#flowerRose" transform="translate(340, 210) scale(1.3)" />
+    <use href="#flowerRose" transform="translate(425, 180) scale(1.3)" />
+
+    <use href="#flowerRose" transform="translate(900, 520) scale(1.0)" />
+    <use href="#flowerRose" transform="translate(855, 395) scale(1.1)" />
+    <use href="#flowerRose" transform="translate(800, 310) scale(1.2)" />
+    <use href="#flowerRose" transform="translate(735, 245) scale(1.25)" />
+    <use href="#flowerRose" transform="translate(660, 210) scale(1.3)" />
+    <use href="#flowerRose" transform="translate(575, 180) scale(1.3)" />
+  </g>
+
+  <!-- APEX CROWN: BAROQUE OVAL MEDALLION WITH LORD GANESHA -->
+  <g id="apexGaneshaShrine" transform="translate(500, 95)" filter="url(#goldGlow)">
+    <!-- Ornate Baroque Oval Frame -->
+    <ellipse cx="0" cy="0" rx="76" ry="90" fill="url(#stoneLight)" stroke="url(#goldShine)" stroke-width="5" />
+    <ellipse cx="0" cy="0" rx="68" ry="82" fill="#4a0810" stroke="url(#goldBright)" stroke-width="2" />
+    <ellipse cx="0" cy="0" rx="64" ry="78" fill="none" stroke="url(#goldBright)" stroke-width="1.2" stroke-dasharray="4,3" />
+
+    <!-- Rococo Scrollwork Ears on Medallion -->
+    <path d="M -72 -15 C -102 -48 -70 -85 -38 -80 C -60 -70 -70 -48 -60 -25 Z" fill="url(#goldShine)" />
+    <path d="M 72 -15 C 102 -48 70 -85 38 -80 C 60 -70 70 -48 60 -25 Z" fill="url(#goldShine)" />
+    <circle cx="0" cy="-90" r="9" fill="url(#goldShine)" />
+    <circle cx="0" cy="-90" r="4.5" fill="#750d19" />
+
+    <!-- Auspicious Shree Ganesha Divine Iconography -->
+    <g transform="translate(0, -8) scale(0.25)">
+      <!-- Mukut (Crown) -->
+      <path d="M 0 -145 L 32 -72 L 64 -10 L -64 -10 L -32 -72 Z" fill="url(#goldShine)" />
+      <circle cx="0" cy="-150" r="10" fill="url(#goldBright)" />
+      <circle cx="0" cy="-78" r="9" fill="#dc2626" />
+      <rect x="-70" y="-16" width="140" height="20" rx="6" fill="url(#goldShine)" />
+
+      <!-- Mastak & Tilak -->
+      <path d="M -9 10 Q 0 0 9 10 L 9 46 Q 0 54 -9 46 Z" fill="#dc2626" />
+      <path d="M -24 16 Q -10 34 0 42 Q 10 34 24 16" fill="none" stroke="url(#goldBright)" stroke-width="5.5" stroke-linecap="round" />
+
+      <!-- Royal Ears -->
+      <path d="M -54 0 C -135 6 -155 72 -130 124 C -110 160 -64 160 -32 140" fill="none" stroke="url(#goldShine)" stroke-width="9.5" stroke-linecap="round" />
+      <path d="M 54 0 C 135 6 155 72 130 124 C 110 160 64 160 32 140" fill="none" stroke="url(#goldShine)" stroke-width="9.5" stroke-linecap="round" />
+
+      <!-- Divine Eyes -->
+      <ellipse cx="-26" cy="56" rx="5.5" ry="3.5" fill="#ffffff" />
+      <circle cx="-26" cy="56" r="2.8" fill="#42040b" />
+      <ellipse cx="26" cy="56" rx="5.5" ry="3.5" fill="#ffffff" />
+      <circle cx="26" cy="56" r="2.8" fill="#42040b" />
+
+      <!-- Vakratunda Curved Trunk with Modak -->
+      <path d="M 0 82 C 10 134 5 180 -26 220 C -58 250 -98 245 -108 215 C -118 174 -78 154 -48 164" fill="none" stroke="url(#goldShine)" stroke-width="11.5" stroke-linecap="round" />
+      <circle cx="-78" cy="184" r="15" fill="#fde047" stroke="url(#goldShine)" stroke-width="3" />
+
+      <!-- Abhaya Mudra Blessing Hand Right -->
+      <path d="M 68 144 C 78 112 114 122 118 148 C 124 168 108 194 88 198 Z" fill="none" stroke="url(#goldShine)" stroke-width="7.5" stroke-linecap="round" />
+      <text x="96" y="170" font-size="20" fill="url(#goldBright)" font-family="serif" text-anchor="middle" font-weight="bold">ॐ</text>
+
+      <!-- Padmasana Lotus Base -->
+      <path d="M 0 255 C -65 220 -145 225 -155 260 C -82 280 82 280 155 260 C 145 225 65 220 0 255 Z" fill="#7f1d1d" stroke="url(#goldShine)" stroke-width="4.5" />
+    </g>
+
+    <!-- Sanskrit Sacred Inscription Plaque at Bottom of Medallion -->
+    <rect x="-92" y="78" width="184" height="28" rx="14" fill="rgba(35, 3, 8, 0.96)" stroke="url(#goldBright)" stroke-width="1.6" />
+    <text x="0" y="97" font-family="'Playfair Display', Georgia, serif" font-size="12" font-weight="bold" fill="url(#goldBright)" letter-spacing="1.8" text-anchor="middle">
+      ॥ श्री गणेशाय नमः ॥
+    </text>
+  </g>
+</svg>
